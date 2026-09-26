@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Ibukunoluwami ♡</title>
+    <meta
+      name="description"
+      content="A little birthday gift for Ibukunoluwami."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <div id="hearts"></div>
+    <audio id="birthdayMusic" loop preload="auto">
+      <source src="assets/birthday-song.mp3" type="audio/mpeg" />
+    </audio>
+    <button
+      id="musicToggle"
+      class="music-toggle"
+      type="button"
+      aria-pressed="false"
+    >
+      <span aria-hidden="true">♫</span> Play music
+    </button>
+
+    <main>
+      <section class="hero">
+        <p class="eyebrow">SEPTEMBER 28 · A LITTLE SOMETHING FOR YOU</p>
+        <h1>Happy birthday,<br /><span>Ibukunoluwami.</span></h1>
+        <p class="hero-sub">
+          I couldn't be there the way I wanted to be… so I made you a little
+          place to visit instead.
+        </p>
+        <p class="music-note">
+          Stay on this page until the song finishes, Angel. It will loop while
+          you explore. ♡
+        </p>
+        <button class="primary" onclick="scrollToId('story')">
+          Open your gift <span>↓</span>
+        </button>
+
+        <div class="countdown-card">
+          <div class="countdown-label">Until your birthday</div>
+          <div id="countdown" class="countdown">00 : 00 : 00 : 00</div>
+          <div class="countdown-words">
+            <span>DAYS</span><span>HOURS</span><span>MINUTES</span
+            ><span>SECONDS</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="birthday-cake" aria-labelledby="cake-title">
+        <div class="cake-inner">
+          <div class="section-tag">A LITTLE CELEBRATION</div>
+          <h2 id="cake-title">Make a wish,<br /><em>birthday girl.</em></h2>
+          <p class="cake-intro">
+            Twenty looks lovely on you. Take a breath, then cut yourself a
+            slice.
+          </p>
+
+          <div
+            id="cakeScene"
+            class="cake-scene"
+            role="img"
+            aria-label="A pink birthday cake with two lit candles"
+          >
+            <div class="cake">
+              <div class="cake-candles" aria-hidden="true">
+                <span class="cake-candle">2<i></i></span>
+                <span class="cake-candle">0<i></i></span>
+              </div>
+              <div class="cake-top"></div>
+              <div class="cake-body"></div>
+              <div class="cake-slice"></div>
+            </div>
+            <div class="cake-plate"></div>
+          </div>
+
+          <button
+            id="cutCakeButton"
+            class="primary cake-button"
+            onclick="cutCake()"
+          >
+            Cut the cake <span>✦</span>
+          </button>
+          <p id="cakeMessage" class="cake-message" aria-live="polite">
+            Close your eyes and make a wish.
+          </p>
+        </div>
+      </section>
+
+      <section id="story" class="section story">
+        <div class="section-tag">01 · US</div>
+        <h2>Two strangers.<br /><em>One very cute story.</em></h2>
+
+        <div class="letter">
+          <p>Ibukunoluwami, <strong>eleyinjú ege témí níkàn.</strong></p>
+          <p>
+            The first day I saw you, my first thought was,
+            <q>oh damn, who's this lady with the baby face?</q> 😂
+          </p>
+          <p>
+            And then we had a cute little first date. Two strangers — one trying
+            to keep it cool while you were simply being you.
+          </p>
+          <p>
+            As much as I didn't want that day to come to an end, it did. But it
+            paved the way for many more interesting times together.
+          </p>
+          <p>
+            You may or may not know that this month marks
+            <strong>six months</strong> of us. It does — and somehow that makes
+            this birthday even more special.
+          </p>
+          <p>
+            In these six months, you've been a source of motivation for me.
+            You've been a constant source of joy. So today, I don't just want to
+            wish you happy birthday.
+          </p>
+          <p><strong>I want to pray for you.</strong></p>
+          <p>
+            Ibukunoluwami, this is going to be your last birthday that I fail to
+            celebrate you the way I want, in Jesus' name.
+          </p>
+          <p>
+            I wish you a long life, Angel — long enough to create many more
+            interesting memories, long enough to mother
+            <strong>Aramide</strong>, and long enough for us to sit together
+            decades from now and tell our story ourselves.
+          </p>
+          <p>
+            Your beauty attracted me at first, but your spirit made me stay. I
+            pray that the Spirit of God will never leave you.
+          </p>
+          <p class="signature">
+            Welcome to your twenties, baby. ♡<br /><span
+              >— Oluwatimileyin Olanrewaju</span
+            >
+          </p>
+        </div>
+      </section>
+
+      <section class="section memories">
+        <div class="section-tag">02 · BEFORE & AFTER</div>
+        <h2>Then & now.</h2>
+        <p class="section-intro">
+          Four little pieces of the girl you were, and six pieces of the woman
+          I've had the privilege of knowing.
+        </p>
+
+        <button
+          id="photoMotionButton"
+          class="motion-toggle"
+          type="button"
+          aria-pressed="false"
+        >
+          <span aria-hidden="true">Ⅱ</span> Pause photo motion
+        </button>
+
+        <div class="gallery old-gallery">
+          <figure>
+            <img src="assets/her-01.jpg" alt="Ibukunoluwami — old photo 1" />
+            <figcaption>Before I knew you</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/her-02.jpg" alt="Ibukunoluwami — old photo 2" />
+            <figcaption>A little throwback</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/her-03.jpg" alt="Ibukunoluwami — old photo 3" />
+            <figcaption>Look at you 😂</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/her-04.jpg" alt="Ibukunoluwami — old photo 4" />
+            <figcaption>Still you.</figcaption>
+          </figure>
+        </div>
+
+        <div class="ours-label">AND THEN THERE WAS US</div>
+        <div class="gallery ours-gallery">
+          <figure>
+            <img src="assets/us-01.jpg" alt="Us — memory 1" />
+            <figcaption>Memory I</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/us-02.jpg" alt="Us — memory 2" />
+            <figcaption>Memory II</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/us-03.jpg" alt="Us — memory 3" />
+            <figcaption>Memory III</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/us-04.jpg" alt="Us — memory 4" />
+            <figcaption>Memory IV</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/us-05.jpg" alt="Us — memory 5" />
+            <figcaption>Memory V</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/us-06.jpg" alt="Us — memory 6" />
+            <figcaption>Memory VI</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section film">
+        <div class="section-tag">03 · LITTLE MOMENTS</div>
+        <h2>Some moments<br /><em>deserve motion.</em></h2>
+        <div class="video-grid">
+          <div class="video-frame">
+            <video
+              controls
+              playsinline
+              muted
+              poster="assets/video-poster-01.MP4"
+            >
+              <source src="assets/video-poster-01.MP4" type="video/mp4" />
+            </video>
+            <p>One of my favourite little moments.</p>
+          </div>
+          <div class="video-frame">
+            <video
+              controls
+              playsinline
+              muted
+              poster="assets/video-poster-02.MP4"
+            >
+              <source src="assets/video-poster-02.MP4" type="video/mp4" />
+            </video>
+            <p>Another one for the archive. ♡</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section prayer">
+        <div class="prayer-card">
+          <div class="section-tag">04 · A PRAYER</div>
+          <div class="cross">✦</div>
+          <h2>May God keep you.</h2>
+          <p>
+            May He give you long life, wisdom, peace, joy, good health and the
+            courage to become everything He has called you to be.
+          </p>
+          <p>
+            May this new decade bring you closer to Him, closer to the person
+            you are becoming, and closer to every beautiful thing He has
+            prepared for you.
+          </p>
+          <p class="amen">Amen. ♡</p>
+        </div>
+      </section>
+
+      <section class="section secret">
+        <div class="section-tag">05 · CLASSIFIED</div>
+        <h2>One last thing…</h2>
+        <p class="section-intro">
+          There is a tiny door here. You probably know what goes inside.
+        </p>
+
+        <div id="lock" class="lock-card">
+          <div class="lock-icon">♡</div>
+          <h3>Future access</h3>
+          <p>Enter the name we already chose.</p>
+          <div class="lock-input">
+            <input
+              id="secretInput"
+              type="text"
+              autocomplete="off"
+              placeholder="First child's name"
+            />
+            <button onclick="unlock()">Unlock</button>
+          </div>
+          <p id="lockMessage" class="lock-message"></p>
+        </div>
+
+        <div id="unlocked" class="unlocked hidden">
+          <div class="tiny-label">ACCESS GRANTED</div>
+          <div class="big-name">Aramide</div>
+          <p>😂 You actually knew it.</p>
+          <p>Okay, that's enough future planning for one birthday.</p>
+        </div>
+      </section>
+
+      <section class="finale">
+        <div class="finale-inner">
+          <p class="eyebrow">SEPTEMBER 28</p>
+          <h2>Happy 20th,<br /><span>Angel.</span></h2>
+          <p>
+            Since you didn't want me there physically, remember the condition
+            for your gift:
+          </p>
+          <div class="condition">
+            It must be collected by you from me.<br /><strong
+              >No mediator. 😌</strong
+            >
+          </div>
+          <p class="small">
+            Until then, keep this little corner of the internet.
+          </p>
+          <div class="heart">♥</div>
+          <p class="from">Oluwatimileyin Olanrewaju Adisa loves you!</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
